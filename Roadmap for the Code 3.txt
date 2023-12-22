@@ -1,0 +1,30 @@
+Roadmap for the Code:
+1. Setup and Initialization
+    Web Driver Initialization: Start a Chrome browser session and navigate to the target website.
+    Connect to Website: Attempt to connect to the specific URL.
+2. Captcha Handling
+    Find Input Field: Locate the input field for the captcha.
+Capture Captcha Screenshot: Take a screenshot of the captcha image.
+Convert Image to Text: Extract text content from the captcha image using EasyOCR.
+Fill Input Field: Enter the extracted text into the captcha input field.
+3. Input Validation
+Click Validation Button: Trigger the validation by clicking the appropriate button.
+Check Input Validity: Determine if the input was correct or incorrect.
+If incorrect:
+Refresh captcha and re-validate.
+If correct:
+Move to the subsequent steps.
+4. Form Filling
+Select Service Type: Choose the service type from the dropdown menu.
+Select Location: Pick the location from the dropdown menu.
+5. Date Availability Check
+Check Date Field: Verify the availability of the desired date field.
+6. Conclusion
+Display Results: Print whether the date is available or not.
+7. Cleanup and Exit
+Close Browser: Terminate the browser session.
+Additional Notes:
+Error Handling: Exception handling throughout the code for graceful error management.
+Function Modularity: Segregated functionalities into individual functions for better maintainability.
+While Loop: Utilizes a loop to validate the captcha input until it's correct.
+Main Function: Orchestrates the entire process, calling functions in a sequence.
